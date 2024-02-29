@@ -5,15 +5,15 @@ using namespace std;
 int main() {
 
     BIGNUM* e = BN_new();
-    const char* e1 = "65537";
+    const char* e1 = "";
     BN_dec2bn(&e, e1);
 
     BIGNUM* p = BN_new();
-    const char* p1 = "310156213009687457743447984426171582459";
+    const char* p1 = "";
     BN_dec2bn(&p, p1);
 
     BIGNUM* q = BN_new();
-    const char* q1 = "176665284026927798395694329971348987271";
+    const char* q1 = "";
     BN_dec2bn(&q, q1);
 
     BN_CTX* ctx = BN_CTX_new();
